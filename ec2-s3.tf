@@ -7,7 +7,7 @@ provider "aws"  {
 
 
 
-### Provisionar EC2
+Provisionar EC2
 data "aws_ami" "ubuntu" {
   most_recent = true
 
@@ -21,7 +21,7 @@ data "aws_ami" "ubuntu" {
     values = ["hvm"]
   }
 
-  owners = ["099720109477"] # Canonical
+  owners = ["099720109477"] 
 }
 
 resource "aws_instance" "web" {
@@ -32,7 +32,6 @@ resource "aws_instance" "web" {
     Name = "TAG-PARA-EC2"
   }
 }
-
 
 
 
