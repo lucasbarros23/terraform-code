@@ -7,7 +7,7 @@ provider "aws"  {
 
 
 
-Provisionar EC2
+#Provisionar EC2
 data "aws_ami" "ubuntu" {
   most_recent = true
 
