@@ -1,12 +1,3 @@
-provider "aws"  {
-    access_key = "INFORME-SUA-ACCESS-KEY"
-    secret_key = "INFORME-SUA-SECRET-KEY"
-    region     = "us-east-1"
-
-}
-
-
-
 #Provisionar EC2
 data "aws_ami" "ubuntu" {
   most_recent = true
